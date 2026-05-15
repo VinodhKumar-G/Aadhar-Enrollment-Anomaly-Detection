@@ -25,6 +25,12 @@ Key AI components:
 
 Advanced generative AI models (LLMs, RAG, Agentic AI) were intentionally not used to ensure **responsibility, explainability, and ethical compliance**.
 
+## System Architecture
+
+The following diagram illustrates the workflow and architecture of the Aadhaar Enrollment Anomaly Detection system.
+
+![System Architecture](images/Architecture-diagram.png)
+
 ## 📊 Dataset
 - Source: Publicly available, aggregated Aadhaar enrollment statistics
 - Region: Bengaluru Rural district, Karnataka
