@@ -1,73 +1,31 @@
-# Aadhaar Enrollment Trend & Anomaly Detection  
-AI-assisted trend and anomaly analysis of public Aadhaar enrollment data for sustainable digital governance.
+# 🆔 Aadhaar Enrollment Anomaly Detection
 
-The project analyses **public Aadhaar enrollment data** for **Bengaluru Rural district, Karnataka** indentifying the longterm trends and detect anomalies using **AI-assisted statistical methods**.
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
+[![GSSoC 2026](https://img.shields.io/badge/GSSoC-2026-orange)](https://gssoc.girlscript.tech/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-The goal is **sustainable digital governance** through data-driven, transparent, and responsible AI.
+An AI-assisted analytical system to detect trends and anomalies in public Aadhaar enrollment data, focusing on sustainable digital governance in Bengaluru Rural.
 
-## Project Context
-UIDAI Aadhar enrollment services generates a very large volume of data over time.However, **sudden drops, spikes, or irregular patterns** in enrollment process go unnoticed when monitoring is manual or get delayed.
+---
 
-Project identifies the gap by building an **AI-assisted analytical decision-support system** that automatically highlights the trends and anomalies to support the proactive governance using the insghts.
+## 🚀 The Vision
+Sudden drops or spikes in enrollment often go unnoticed. This project fills that gap by using **Explainable AI (XAI)**—specifically statistical anomaly detection (Z-score)—to provide proactive insights for government infrastructure planning.
 
-### Problem Statement
-Uneven and unpredictable Aadhaar enrollment patterns can impact equitable access to digital identity services.  
-Without automated analysis, anomalies may delay administrative response and affect service availability, especially in rural regions.
+## ✨ Key Features
+- **Trend Analysis:** Automated monthly growth tracking across 0-5, 5-17, and 18+ age groups.
+- **Anomaly Detection:** Statistical identification of irregular enrollment patterns using Z-score logic.
+- **Transparent Logic:** No black-box models; strictly interpretable and ethical AI.
+- **Sustainability Impact:** Supporting **SDG 11** by reducing regional service inequalities.
 
-## Role of AI
-AI is used in the form of **statistical pattern and anomaly detection**, which is a valid and explainable AI approach for analytical decision-support systems.
+## 🛠️ Tech Stack
+- **Languages:** Python
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, SciPy
+- **Platform:** Jupyter Notebooks
 
-Key AI components:
-- Automated trend analysis over time
-- Statistical anomaly detection using Z-score
-- Scalable and repeatable pattern identification
-- Transparent and interpretable logic (no black-box models)
-
-Advanced generative AI models (LLMs, RAG, Agentic AI) were intentionally not used to ensure **responsibility, explainability, and ethical compliance**.
-
-## 📊 Dataset
-- Source: Publicly available, aggregated Aadhaar enrollment statistics
-- Region: Bengaluru Rural district, Karnataka
-- Granularity: Monthly
-- Attributes:
-  - Age 0–5
-  - Age 5–17
-  - Age 18+
-- No personal, biometric, or sensitive data is used
-
-## 🛠️ Methodology
-1. Data loading and validation  
-2. Date cleaning and preprocessing  
-3. Feature engineering (total enrollment, growth rate)  
-4. Trend analysis (overall and age-wise)  
-5. AI-assisted anomaly detection (Z-score)  
-6. Visualization and interpretation  
-
-## 🌍 Sustainability Impact (SDG 11)
-If implemented, this solution can:
-- Enable early detection of service delivery issues
-- Support better planning of enrollment infrastructure
-- Reduce regional and demographic inequalities
-- Improve access to digital identity for citizens
-
-## ⚖️ Responsible AI Considerations
-- Uses only aggregated and anonymized public data
-- No surveillance, profiling, or personal data usage
-- Transparent and explainable analytical logic
-- Intended strictly for decision support
-
-
-## 📂 Repository Structure
-
-Aadhar-Enrollment-Anomaly-Detection
-│
-├── Data/ # Public dataset (CSV)
-├── Notebook/ # Jupyter notebook analysis
-│ └── Analysis.ipynb
-├── Visuals/ # (Optional) Saved plots
-├── README.md
-├── requirements.txt
-└── .gitignore
-
-## 🚀 How to Run
-pip install -r requirements.txt
+## 📂 Project Structure
+```text
+├── Data/           # Publicly aggregated CSV datasets
+├── Notebook/       # Core analysis logic (Analysis.ipynb)
+├── Visuals/        # Generated trend plots and heatmaps
+├── requirements.txt # Project dependencies
+└── README.md
