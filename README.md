@@ -1,73 +1,92 @@
-# Aadhaar Enrollment Trend & Anomaly Detection  
-AI-assisted trend and anomaly analysis of public Aadhaar enrollment data for sustainable digital governance.
+# Aadhaar Enrollment Trend, EDA, and Anomaly Detection
 
-The project analyses **public Aadhaar enrollment data** for **Bengaluru Rural district, Karnataka** indentifying the longterm trends and detect anomalies using **AI-assisted statistical methods**.
+Expanded exploratory data analysis and statistical review of public Aadhaar enrollment data, focused on spotting operational shifts, demographic mix changes, and unusual enrollment patterns through transparent statistical methods.
 
-The goal is **sustainable digital governance** through data-driven, transparent, and responsible AI.
+## Project Goal
+Build explainable decision-support analysis for Aadhaar enrollment operations using:
+- data validation and quality review
+- exploratory data analysis (EDA)
+- descriptive and inferential statistics
+- anomaly detection with interpretable rules
+- reusable visuals for operational reporting
 
-## Project Context
-UIDAI Aadhar enrollment services generates a very large volume of data over time.However, **sudden drops, spikes, or irregular patterns** in enrollment process go unnoticed when monitoring is manual or get delayed.
+## Current Dataset Scope
+- Source: public aggregated Aadhaar enrollment records
+- File: `Data/aadhar_enrollment_bengaluru_rural.csv`
+- Geographic values inside file: `Bengaluru Urban`, `Karnataka`
+- Granularity in file: irregular snapshot dates, not a complete monthly time series
+- Columns:
+  - `date`
+  - `state`
+  - `district`
+  - `pincode`
+  - `age_0_5`
+  - `age_5_17`
+  - `age_18_greater`
 
-Project identifies the gap by building an **AI-assisted analytical decision-support system** that automatically highlights the trends and anomalies to support the proactive governance using the insghts.
+Note: file name says `bengaluru_rural`, but dataset values currently point to `Bengaluru Urban`. Analysis uses file contents as source of truth.
 
-### Problem Statement
-Uneven and unpredictable Aadhaar enrollment patterns can impact equitable access to digital identity services.  
-Without automated analysis, anomalies may delay administrative response and affect service availability, especially in rural regions.
+## Analysis Added
+Issue `#34` scope is covered through:
+- dataset profiling and data-quality checks
+- date coverage audit and snapshot-level aggregation
+- descriptive statistics with skewness, kurtosis, and coefficient of variation
+- correlation analysis across age cohorts and total enrollment
+- top-pincode concentration analysis
+- growth-rate and rolling-trend analysis
+- anomaly detection using Z-score, modified Z-score, and IQR rules
+- statistical tests:
+  - Shapiro-Wilk normality test
+  - linear trend regression
+  - Wilcoxon signed-rank test for matched pincode shifts
+  - chi-square test for age-mix shift between major snapshots
 
-## Role of AI
-AI is used in the form of **statistical pattern and anomaly detection**, which is a valid and explainable AI approach for analytical decision-support systems.
+## Repository Structure
 
-Key AI components:
-- Automated trend analysis over time
-- Statistical anomaly detection using Z-score
-- Scalable and repeatable pattern identification
-- Transparent and interpretable logic (no black-box models)
-
-Advanced generative AI models (LLMs, RAG, Agentic AI) were intentionally not used to ensure **responsibility, explainability, and ethical compliance**.
-
-## 📊 Dataset
-- Source: Publicly available, aggregated Aadhaar enrollment statistics
-- Region: Bengaluru Rural district, Karnataka
-- Granularity: Monthly
-- Attributes:
-  - Age 0–5
-  - Age 5–17
-  - Age 18+
-- No personal, biometric, or sensitive data is used
-
-## 🛠️ Methodology
-1. Data loading and validation  
-2. Date cleaning and preprocessing  
-3. Feature engineering (total enrollment, growth rate)  
-4. Trend analysis (overall and age-wise)  
-5. AI-assisted anomaly detection (Z-score)  
-6. Visualization and interpretation  
-
-## 🌍 Sustainability Impact (SDG 11)
-If implemented, this solution can:
-- Enable early detection of service delivery issues
-- Support better planning of enrollment infrastructure
-- Reduce regional and demographic inequalities
-- Improve access to digital identity for citizens
-
-## ⚖️ Responsible AI Considerations
-- Uses only aggregated and anonymized public data
-- No surveillance, profiling, or personal data usage
-- Transparent and explainable analytical logic
-- Intended strictly for decision support
-
-
-## 📂 Repository Structure
-
+```text
 Aadhar-Enrollment-Anomaly-Detection
-│
-├── Data/ # Public dataset (CSV)
-├── Notebook/ # Jupyter notebook analysis
-│ └── Analysis.ipynb
-├── Visuals/ # (Optional) Saved plots
-├── README.md
-├── requirements.txt
-└── .gitignore
+|
++-- Data/
+|   +-- aadhar_enrollment_bengaluru_rural.csv
++-- Notebook/
+|   +-- Analysis.ipynb
+|   +-- comprehensive_eda.py
++-- Visuals/
+|   +-- eda_total_enrollment_trend.png
+|   +-- eda_age_mix_trend.png
+|   +-- eda_distribution_overview.png
+|   +-- eda_correlation_heatmap.png
+|   +-- eda_top_pincodes.png
++-- README.md
++-- requirements.txt
++-- .gitignore
+```
 
-## 🚀 How to Run
+## How To Run
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
+
+Run full analysis script:
+
+```bash
+python Notebook/comprehensive_eda.py
+```
+
+Open notebook for guided EDA:
+
+```bash
+jupyter notebook Notebook/Analysis.ipynb
+```
+
+## Responsible AI Notes
+- Uses only aggregated public data
+- No personal or biometric information
+- Statistical logic is transparent and auditable
+- Intended for operational insight, not automated decision-making about individuals
+
+## Key Caution
+Because dataset currently contains only four snapshot dates, results are useful for monitoring and hypothesis generation, but not for strong causal or seasonal claims.
