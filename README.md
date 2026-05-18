@@ -69,5 +69,61 @@ Aadhar-Enrollment-Anomaly-Detection
 ├── requirements.txt
 └── .gitignore
 
-## 🚀 How to Run
+##  How to Run
 pip install -r requirements.txt
+
+
+## Interactive ML Visualization Dashboard
+
+An interactive dashboard was added to improve anomaly monitoring, visualization, and interpretability of Aadhaar enrollment patterns using AI-assisted anomaly analytics.
+
+### Features Added
+
+* Isolation Forest based anomaly detection
+* Interactive anomaly distribution visualization
+* Correlation heatmaps for enrollment attributes
+* Time-series anomaly trend analysis
+* Pincode-wise suspicious activity monitoring
+* Date range filtering for anomaly investigation
+* Interactive suspicious records table
+
+### Dashboard Analytics
+
+#### Anomaly Distribution Visualization
+
+Displays the ratio of normal vs suspicious enrollment records detected by the anomaly detection model, helping understand anomaly frequency within the dataset.
+
+#### Correlation Heatmaps
+
+Shows relationships between enrollment attributes and age-group patterns, helping identify feature dependencies and unusual enrollment behavior.
+
+#### Time-Series Anomaly Trend Analysis
+
+Visualizes suspicious enrollment activity across dates to identify sudden spikes, irregular surges, and abnormal enrollment behavior over time.
+
+#### Pincode-wise Suspicious Activity Monitoring
+
+Highlights which pincodes are showing higher suspicious enrollment behavior, helping identify region-specific anomalies and irregular activity patterns.
+
+#### Date Range Filtering
+
+Allows users to investigate suspicious activity within a selected time period for better temporal analysis and targeted anomaly monitoring.
+
+#### Interactive Suspicious Records Table
+
+Displays suspicious records along with important details such as date, state, district, pincode, and enrollment counts for detailed anomaly investigation and manual verification.
+
+### Technologies Used
+
+* Streamlit
+* Plotly
+* Seaborn
+* Matplotlib
+* Scikit-learn
+
+### Run Interactive Dashboard
+
+```bash id="r8wx2n"
+cd Visuals
+python -m streamlit run dashboard.py
+```
