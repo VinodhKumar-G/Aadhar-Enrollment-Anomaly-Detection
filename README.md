@@ -35,6 +35,27 @@ Advanced generative AI models (LLMs, RAG, Agentic AI) were intentionally not use
   - Age 18+
 - No personal, biometric, or sensitive data is used
 
+## 📈 Dataset Summary Statistics
+
+A quick overview of the Aadhaar enrollment dataset used in this project:
+
+| Metric             | Value                    |
+| ------------------ | ------------------------ |
+| Total Records      | 97                       |
+| Date Range         | 01-06-2025 to 20-03-2025 |
+| Average Enrollment | 237.88                   |
+| Minimum Enrollment | 39                       |
+| Maximum Enrollment | 804                      |
+
+### Included Age Categories
+
+* Age 0–5
+* Age 5–17
+* Age 18+
+
+These statistics provide a quick understanding of the dataset before performing trend analysis and anomaly detection.
+
+
 ## 🛠️ Methodology
 1. Data loading and validation  
 2. Date cleaning and preprocessing  
