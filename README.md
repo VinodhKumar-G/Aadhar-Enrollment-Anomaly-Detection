@@ -61,13 +61,41 @@ If implemented, this solution can:
 
 Aadhar-Enrollment-Anomaly-Detection
 │
-├── Data/ # Public dataset (CSV)
-├── Notebook/ # Jupyter notebook analysis
-│ └── Analysis.ipynb
-├── Visuals/ # (Optional) Saved plots
+├── Data/
+├── Notebook/
+├── Visuals/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+
+
+## ⚙️ Setup Instructions
+
+### 1. Clone repository
+git clone <repo-url>
+cd Aadhar-Enrollment-Anomaly-Detection
+
+### 2. Create virtual environment
+python -m venv venv
+
+### 3. Activate environment
+venv\Scripts\activate   (Windows)
+source venv/bin/activate (Mac/Linux)
+
+### 4. Install dependencies
+pip install -r requirements.txt
+
+### 5. Install Jupyter
+pip install notebook ipykernel
+
+### 6. Start Jupyter
+python -m notebook
+
+### 7. Open notebook
+Notebook/Analysis.ipynb
+
+### 8. Select correct kernel
+Choose: Python (venv)
 
 ## 🚀 How to Run
 pip install -r requirements.txt
