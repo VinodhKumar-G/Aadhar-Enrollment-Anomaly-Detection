@@ -6,9 +6,9 @@ The project analyses **public Aadhaar enrollment data** for **Bengaluru Rural di
 The goal is **sustainable digital governance** through data-driven, transparent, and responsible AI.
 
 ## Project Context
-UIDAI Aadhar enrollment services generates a very large volume of data over time.However, **sudden drops, spikes, or irregular patterns** in enrollment process go unnoticed when monitoring is manual or get delayed.
+UIDAI Aadhar enrollment services generates a very large volume of data over time. However, **sudden drops, spikes, or irregular patterns** in enrollment process go unnoticed when monitoring is manual or get delayed.
 
-Project identifies the gap by building an **AI-assisted analytical decision-support system** that automatically highlights the trends and anomalies to support the proactive governance using the insghts.
+Project identifies the gap by building an **AI-assisted analytical decision-support system** that automatically highlights the trends and anomalies to support the proactive governance using the insights.
 
 ### Problem Statement
 Uneven and unpredictable Aadhaar enrollment patterns can impact equitable access to digital identity services.  
