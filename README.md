@@ -1,7 +1,7 @@
 # Aadhaar Enrollment Trend & Anomaly Detection  
 AI-assisted trend and anomaly analysis of public Aadhaar enrollment data for sustainable digital governance.
 
-The project analyses **public Aadhaar enrollment data** for **Bengaluru Rural district, Karnataka** indentifying the longterm trends and detect anomalies using **AI-assisted statistical methods**.
+The project analyses **public Aadhaar enrollment data** for **Bengaluru Urban district, Karnataka** indentifying the longterm trends and detect anomalies using **AI-assisted statistical methods**.
 
 The goal is **sustainable digital governance** through data-driven, transparent, and responsible AI.
 
@@ -27,7 +27,7 @@ Advanced generative AI models (LLMs, RAG, Agentic AI) were intentionally not use
 
 ## 📊 Dataset
 - Source: Publicly available, aggregated Aadhaar enrollment statistics
-- Region: Bengaluru Rural district, Karnataka
+- Region: Bengaluru Urban district, Karnataka
 - Granularity: Monthly
 - Attributes:
   - Age 0–5
